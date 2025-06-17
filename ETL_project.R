@@ -14,7 +14,7 @@ CLIENT_LOCAL_FILES <- 128
 host <- 'localhost'
 port <- 3307
 user <- 'admin'
-password <- '92194Rd_18'
+password <- 'xxxx' #hide this before upload
 db_name <- 'arcade_db'
 
 # Connect to MySQL
@@ -28,7 +28,7 @@ mydb <- dbConnect(
          client.flag = CLIENT_LOCAL_FILES #unique to this project
 )
 
-# Load CSVs
+# Load CSVs, if larger data set i would likely loop through the folder
 manufacturers <- read_csv('C:/Users/ryand/Desktop/Project/Raw Data/manufacturers.csv')
 machines <- read_csv('C:/Users/ryand/Desktop/Project/Raw Data/machines.csv')
 locations <- read_csv('C:/Users/ryand/Desktop/Project/Raw Data/locations.csv')
