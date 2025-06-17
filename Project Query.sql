@@ -1,10 +1,4 @@
-CREATE DATABASE arcade_db;
-
-SET GLOBAL local_infile = 'ON';
-
-SELECT *
-FROM arcade_db.locations;
-
+/* Joining Data together prior to moving to dashboard */
 SELECT
     m.machine_id,
     m.machine_name,
